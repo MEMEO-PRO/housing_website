@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #af5151;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+#searchInput {
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.property-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top of the container */
+}
+
+.property-card {
+    width: 300px;
+    height: 380px; /* Set a fixed height for the cards */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Add overflow: hidden to clip the content */
+}
+
+.property-image {
+    width: 100%;
+    height: 60%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-details {
+    height: 150px; /* Set a fixed height for the property details */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.property-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.property-location {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */ /* Remove this margin to align buttons properly */
+}
+
+.contact-agent-btn, .premium-plan-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+
+/* Styling for responsive design */
+@media (max-width: 768px) {
+    .property-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 400px;
+    }
+}

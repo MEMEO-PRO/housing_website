@@ -1,0 +1,87 @@
+{
+    "houses": [
+      {
+        "id": 1,
+        "location": "New York, USA",
+        "price": 500000,
+        "image": "house1.jpg"
+      },
+      {
+        "id": 2,
+        "location": "Los Angeles, USA",
+        "price": 450000,
+        "image": "house2.jpg"
+      },
+      {
+        "id": 3,
+        "location": "London, UK",
+        "price": 600000,
+        "image": "house3.jpg"
+      },
+      {
+        "id": 4,
+        "location": "Sydney, Australia",
+        "price": 550000,
+        "image": "house4.jpg"
+      },
+      {
+        "id": 5,
+        "location": "Toronto, Canada",
+        "price": 520000,
+        "image": "house5.jpg"
+      },
+
+      {
+        "id": 6,
+        "location": "Paris, France",
+        "price": 750000,
+        "area": "1800 sqft",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "type": "House",
+        "image": "house6.jpg"
+      },
+      {
+        "id": 7,
+        "location": "Tokyo, Japan",
+        "price": 900000,
+        "area": "2500 sqft",
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "type": "House",
+        "image": "house7.jpg"
+      },
+      {
+        "id": 8,
+        "location": "Berlin, Germany",
+        "price": 420000,
+        "area": "1500 sqft",
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "type": "Apartment",
+        "image": "house8.jpg"
+      },
+      {
+        "id": 9,
+        "location": "Rome, Italy",
+        "price": 580000,
+        "area": "2000 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "type": "House",
+        "image": "house9.jpg"
+      },
+      {
+        "id": 10,
+        "location": "Madrid, Spain",
+        "price": 480000,
+        "area": "1700 sqft",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "type": "Condo",
+        "image": "house10.jpg"
+      }
+    ]
+
+  }
+  

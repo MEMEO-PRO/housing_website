@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SearchBar from './SearchBar';
+import PropertyCard from './PropertyCard';
+import data from './mock_data.json'; // Import the mock data
 
-function App() {
+const App = () => {
+  const [properties, setProperties] = useState(data.houses);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = () => {
+    const filteredProperties = data.houses.filter(
+      property => property.location.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setProperties(filteredProperties);
+  };
+
+  const handleInputChange = e => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SearchBar handleSearch={handleSearch} handleInputChange={handleInputChange} />
+      <div className="property-container">
+        {properties.length === 0 ? (
+          <div className="no-results">Property not found</div>
+        ) : (
+          properties.map(property => (
+            <PropertyCard key={property.id} property={property} />
+          ))
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
